@@ -1,7 +1,6 @@
 <?php
 $experience = [
-
-[
+  [
         'name' => 'Руководитель отдела',
         'date1' => 'Январь 2022',
         'date2' => 'Текущее время',
@@ -18,7 +17,7 @@ $experience = [
         'date1' => 'Февраль 2017',
         'date2' => 'Май 2020',
         'description' => 'Бегал туда-сюда. То помощник руководителя отругает, то клиент. Зато руководитель угщал конфетами.',
-    ]
+  ]
 ];
 ?>
 
@@ -124,6 +123,7 @@ $experience = [
             <hr>
           </div>
           <?php endfor; ?>
+      </div>
  
         <div class="w3-container w3-card w3-white">
           <h2 class="w3-text-grey w3-padding-16"><i

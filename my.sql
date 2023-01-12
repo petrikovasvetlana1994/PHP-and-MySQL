@@ -12,24 +12,24 @@
 Для проверок работы своего скрипта можете использовать свою базу данных, либо используйте сайт: https://onecompiler.com/mysql */
 
 -- create
-CREATE TABLE CLASSMATES (
+CREATE TABLE classmates (
   empId INTEGER PRIMARY KEY,
   name TEXT NOT NULL,
-  age TEXT NOT NULL,
+  age INTEGER NOT NULL,
   adress TEXT NOT NULL
 );
 
 -- insert
-INSERT INTO CLASSMATES VALUES (0001, 'Anna', '20', 'Barnaul');
-INSERT INTO CLASSMATES VALUES (0002, 'Maria', '17', 'Moscow');
-INSERT INTO CLASSMATES VALUES (0003, 'Tatiana', '27', 'Vladimir');
-INSERT INTO CLASSMATES VALUES (0004, 'Natalia', '22', 'Gus-Khrustalny');
-INSERT INTO CLASSMATES VALUES (0005, 'Vera', '19', 'Dubna');
-INSERT INTO CLASSMATES VALUES (0006, 'Arseny', '39', 'Omsk');
-INSERT INTO CLASSMATES VALUES (0007, 'Dmitry', '37', 'Voronezh');
-INSERT INTO CLASSMATES VALUES (0008, 'Sergey', '39', 'Armavir');
-INSERT INTO CLASSMATES VALUES (0009, 'Anton', '31', 'Voronezh');
-INSERT INTO CLASSMATES VALUES (0010, 'Oleg', '33', 'Moscow');
+INSERT INTO classmates VALUES (0001, 'Anna', '20', 'Barnaul');
+INSERT INTO classmates VALUES (0002, 'Maria', '18', 'Moscow');
+INSERT INTO classmates VALUES (0003, 'Tatiana', '27', 'Vladimir');
+INSERT INTO classmates VALUES (0004, 'Natalia', '22', 'Gus-Khrustalny');
+INSERT INTO classmates VALUES (0005, 'Vera', '19', 'Dubna');
+INSERT INTO classmates VALUES (0006, 'Arseny', '39', 'Omsk');
+INSERT INTO classmates VALUES (0007, 'Dmitry', '37', 'Voronezh');
+INSERT INTO classmates VALUES (0008, 'Sergey', '39', 'Armavir');
+INSERT INTO classmates VALUES (0009, 'Anton', '31', 'Voronezh');
+INSERT INTO classmates VALUES (0010, 'Oleg', '33', 'Moscow');
 
 -- fetch 
-SELECT name FROM CLASSMATES where age >= 18 AND age < 30;
+SELECT name FROM classmates WHERE age >= 18 AND age < 30 AND adress = 'Moscow';
